@@ -6,6 +6,7 @@ import bimg from './himg.jpg'
 import himg from './himg4.jpg'
 import Footer from './Footer'
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Tabsd from './Tabsd'
 
 const Home = () => {
   return(
@@ -23,10 +24,13 @@ const Home = () => {
       <Box sx={{alignItems:"center",height:"40px"}}>
         <h1 style={{textAlign:"center"}}>Easy-to-Use Accounting & Bookkeeping Features</h1>
       </Box>
+      <Box sx={{backgroundColor:"#afc1c9",height:"300px"}}>
+      <Tabsd/>
+      </Box>
       <Box>
         
       </Box>
-      <Box sx={{width:"100vw", height:"530px",backgroundColor:"#afc1c9"}}>
+      <Box sx={{width:"100vw", height:"530px",backgroundColor:"#afc1c9",marginTop:"0px"}}>
          <Typography variant='h5' sx={{lineHeight:"2.5",letterSpacing:"2",marginLeft:"20px"}}>
         Welcome to "BalanceBliss" , where financial management meets simplicity. Take control of your finances effortlessly, streamline your transactions, and gain valuable insights with our intuitive tools. Whether you're a business owner, freelancer, or managing personal finances, our platform is tailored to empower you on your financial journey. Join us to experience seamless accounting and make informed decisions with confidence.
         <br/>

@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 import AccountBalanceSharpIcon from '@mui/icons-material/AccountBalanceSharp';
+import AfterLogin from './AfterLogin';
 export default function Appbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -28,6 +29,7 @@ export default function Appbar() {
          <Link to="/Signup"><Button sx={{marginLeft:"10px",textTransform:"none",backgroundColor:"#afc1c9",color:"black"}} size='small'  variant='contained'>Sign up</Button></Link>
          <Link to="/Contact"><Button sx={{marginLeft:"10px",textTransform:"none",backgroundColor:"#afc1c9",color:"black"}} size='small'  variant='contained'>Contact</Button></Link>
          <Link to="/About"><Button sx={{marginLeft:"10px",textTransform:"none",backgroundColor:"#afc1c9",color:"black"}} size='small' variant='contained'>About</Button></Link>
+         <AfterLogin/>
         </Toolbar>
       </AppBar>
     </Box>
