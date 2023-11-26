@@ -5,7 +5,10 @@ import MenuItem from '@mui/material/MenuItem';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { Avatar } from '@mui/material';
+import { usercontext } from './Usercontext';
+import { useContext } from 'react';
 export default function AfterLogin() {
+  const [user,setuser]=useContext(usercontext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -38,7 +41,7 @@ export default function AfterLogin() {
       >
         <MenuItem onClick={handleClose}>Profile</MenuItem>
         <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem onClick={()=>{setuser(null)}}>Logout</MenuItem>
       </Menu>
     </div>
   );
