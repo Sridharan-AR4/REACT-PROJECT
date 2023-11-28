@@ -11,6 +11,12 @@ import { createContext } from "react";
 import { useState } from "react";
 import { usercontext } from "./Components/Usercontext";
 import AccountingForm from "./Components/AccountingForm.";
+import Invoicing from "./Components/Invoicing";
+import Accounting from "./Components/Accounting";
+import Payment from "./Components/Payment";
+import Expenses from "./Components/Expenses";
+import Report from "./Components/Report";
+import Mobile from "./Components/Mobile";
 const route=createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
@@ -20,6 +26,12 @@ const route=createBrowserRouter(
         <Route path="/About" element={<About/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/Details" element={<AccountingForm/>}/>
+        <Route path="/Invoicing" element={<Invoicing/>}/>
+        <Route path="/Accounting" element={<Accounting/>}/>
+        <Route path="/Payments" element={<Payment/>}/>
+        <Route path="/Expenses" element={<Expenses/>}/>
+        <Route path="/Report" element={<Report/>}/>
+        <Route path="/Mobile" element={<Mobile/>}/>
     </Route>
   )
   )

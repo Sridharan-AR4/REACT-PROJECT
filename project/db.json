@@ -47,6 +47,18 @@
       "email": "ssss@gmail.com",
       "password": "123456",
       "id": 8
+    },
+    {
+      "name": "vasanthakumar",
+      "email": "vasanthakumar@gmail.com",
+      "password": "123456",
+      "id": 9
+    },
+    {
+      "name": "sibipranav",
+      "email": "sibipranav@gmail.com",
+      "password": "12345",
+      "id": 10
     }
   ]
 }
